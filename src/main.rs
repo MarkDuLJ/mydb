@@ -1,3 +1,6 @@
+use mydb::sql;
+
 fn main() {
-    println!("Hello, world!");
+    let token = sql::token::Token::Keyword(sql::token::Keyword::Create);
+    println!("{}", token);
 }
